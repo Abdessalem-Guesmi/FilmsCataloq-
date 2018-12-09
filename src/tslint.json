@@ -1,4 +1,4 @@
-{
+
     "extends": "../tslint.json",
     "rules": {
         "directive-selector": [
@@ -15,3 +15,4 @@
         ]
     }
 }
+        

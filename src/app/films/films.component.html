@@ -1,0 +1,104 @@
+<!-- <MARQUEE Class="Scroller" behavior="up" direction="left" width="100%" height="150" scrolldelay="0" onmouseover="this.stop()" onmouseout="this.start()"> -->
+<MARQUEE scrollamount="10" scrolldelay="8" width="100%" height="100" BEHAVIOR="left" BGCOLOR="DarkGray ">
+    <div class="row">
+
+        <ul *ngFor=" let film of films ">
+
+
+            <div class="col-md-1 ">
+
+                <img src="assets/Films/{{film.img}}.jpg ">
+            </div>
+        </ul>
+    </div>
+
+</MARQUEE>
+<div class=" container">
+
+
+    <div class=" container ">
+        <div class="row ">
+            <h1> Action Films</h1>
+            <ul *ngFor=" let film of films, let id=index ">
+                <div *ngIf="film.type=='Action' ">
+
+                    <div class="col-md-2 ">
+
+                        <img src="assets/Films/{{film.img}}.jpg " alt="{{film.name}} ">
+
+
+
+                        <div class="row">
+
+                            <a (click)="detail(id) " class="btn btn-link ">Description
+                                    
+                            </a>
+
+                            <button type="button" class="btn btn-default btn-sm" (click)="like(id)">
+                                    <span class="glyphicon glyphicon-thumbs-up"></span> {{film.count}}
+                                  </button>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </ul>
+        </div>
+        <div class="row ">
+            <h2>Comedy Films</h2>
+            <ul *ngFor=" let film of films, let id=index ">
+                <div *ngIf="film.type=='Comedie' ">
+
+                    <div class="col-md-2 ">
+
+                        <img src="assets/Films/{{film.img}}.jpg " alt="{{film.name}} ">
+
+                        <div class="row">
+
+                            <a (click)="detail(id) " class="btn btn-link ">Description
+                                
+                        </a>
+                            <button type="button" class="btn btn-default btn-sm" (click)="like(id)">
+                                <span class="glyphicon glyphicon-thumbs-up"></span> {{film.count}}
+                              </button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </ul>
+        </div>
+        <div class="row ">
+            <h2> Drama Films</h2>
+            <ul *ngFor=" let film of films, let id=index ">
+                <div *ngIf="film.type=='Amour' ">
+
+                    <div class="col-md-2 ">
+
+                        <img src="assets/Films/{{film.img}}.jpg " alt="{{film.name}} ">
+
+
+
+                        <div class="row">
+
+                            <a (click)="detail(id) " class="btn btn-link ">Description
+                                    
+                            </a>
+                            <button type="button" class="btn btn-default btn-sm" (click)="like(id)">
+                                    <span class="glyphicon glyphicon-thumbs-up"></span> {{film.count}}
+                                  </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </ul>
+        </div>
+    </div>

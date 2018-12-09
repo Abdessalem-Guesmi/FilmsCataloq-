@@ -1,0 +1,23 @@
+<div class="container ">
+    <div class="row">
+        <MARQUEE scrollamount="5" scrolldelay="8" width="100%" height="25" BEHAVIOR="left" BGCOLOR="red ">
+            <span class="size=20">{{f.name}}</span>
+        </MARQUEE>
+
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="">
+                <img src="assets/Films/{{f.img}}.jpg" alt="{{f.name}}">
+            </div>
+        </div>
+        <div class="col-md-9">
+            <h1>{{f.description}}</h1><br>
+            <a href="{{f.url}}" class="btn glyphicon glyphicon-film">See</a>
+            <!-- <iframe width="500" height="500" src="{{f.url}}" width="480" controls>
+            </iframe> -->
+
+            <a (click)="Back()" class="btn btn-outline-dark">Back to Home...</a>
+        </div>
+    </div>
+</div>
