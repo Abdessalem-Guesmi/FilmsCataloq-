@@ -1,5 +1,9 @@
 # FilmsCatalogue
 
+in this project we used a local API to show you how to use an angular application.
+
+with this mini-project you offer to create a catalog.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
 
 ## Development server
